@@ -9,7 +9,7 @@ const countriesPromise = fetch(
 function App() {
   return (
     <>
-      <Suspense fallback={<p>Loading...</p>}>
+      <Suspense fallback={<h1>Loading...</h1>}>
         <Countries countriesPromise={countriesPromise}></Countries>
       </Suspense>
     </>
